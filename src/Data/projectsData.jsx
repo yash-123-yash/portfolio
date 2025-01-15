@@ -12,7 +12,7 @@ export const projects=[
         id:1,
         title:'Portfolio',
         src:portfolio,
-        link:'#'
+        link:'https://github.com/yash-123-yash/portfolio'
     },
     {
         id:2,

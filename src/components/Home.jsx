@@ -31,7 +31,7 @@ function Home() {
                 </Link>
                 <div className= "flex">
                   <div className="text-white flex hover:-translate-y-0.5  hover:text-blue-500 hover:scale-110 duration-150 py-2 mr-2 ml-0.5">
-                    <AiFillLinkedin size={23}/>
+                    <a href="https://www.linkedin.com/in/yash-bhalerao-67b987287/" target='_blank'><AiFillLinkedin size={23}/></a>
                   </div>
                   <div className="text-white flex hover:-translate-y-0.5  hover:text-blue-500 hover:scale-110 duration-150 py-2 mr-2">
                   <a href="https://github.com/yash-123-yash?tab=repositories" target='_blank'><AiFillGithub size={23}/></a>
