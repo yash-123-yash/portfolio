@@ -1,6 +1,10 @@
 import React from 'react'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from 'react-scroll';
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+// import { FaInstagram } from "react-icons/fa";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 function Contact() {
   return (
@@ -9,28 +13,44 @@ function Contact() {
         <div className="pb-8 mt-16 ">
           <div className="mt-7 flex justify-center flex-col items-center">      
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact&nbsp;&nbsp;Me</p>
-          <p className='py-6'>Submit the form below to get in touch with me</p>
+          <p className='py-4'>get in touch with me</p>
           </div>
             
         </div>
 
-        <div className="flex flex-col  justify-center items-center">
-            {/* <div className="border-2 rounded-md border-white p-6 flex flex-col m-9 justify-center items-center">
-              <h1 className='mb-5 text-3xl'>+91 8432601748</h1>
-              <h1 className='text-3xl'>yashbhalerao@gmail.com</h1>
-            </div> */}
-            <form action="https://getform.io/f/aolljkdb"  method='POST' className='flex flex-col w-full md:w-2/3'>
+        <div className="flex flex-col  justify-center items-center ">
+            <div className="flex md:w-4/5 flex-col md:flex-row ">
+              <div className=" w-full md:w-min rounded-md  pb-6 flex flex-col mr-10 items-center ">
+                <div className=" border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
+                  <AiOutlineWhatsApp size={25}/>
+                  <h1 className='mt-2 font-bold'>whatsApp</h1>
+                  <h1 className=' '>+91 8432601748</h1>
+                </div>
+                <div className="border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
+                  <AiOutlineMail size={25}/>
+                  <h1 className='mt-2 font-bold'>email</h1>
+                  <h1 className=' '>yashbhalerao@gmail.com</h1>
+                </div>
+                <div className="border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
+                  <AiOutlineInstagram size={25}/>
+                  <h1 className='mt-2 font-bold'>Instagram</h1>
+                  <h1 className=' '>Yash_Bhalerao</h1>
+                </div>
+                {/* <h1 className=''></h1> */}
+              </div>
+              <form action="https://getform.io/f/aolljkdb"  method='POST' className='flex flex-col w-full md:w-2/3'>
                 <input type="text" name='name' placeholder='enter your name' 
-                className='active:bg-blue-500 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'/>
+                className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-6'/>
 
                 <input type="text" name='email' placeholder='enter your name' 
-                className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'/>
+                className=' p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-6'/>
 
                 <textarea name="message" placeholder='Enter yoour message' rows="8" id=""
-                className='p-2 bg-transparent border-2 rounded-md focus:outline-none'></textarea>
+                className='p-2 bg-transparent border-2 rounded-md focus:outline-none mb-6'></textarea>
 
-                <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-105 duration-300'>Submit</button>
-            </form>
+                <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3  mx-auto flex items-center rounded-md hover:scale-105 duration-300'>Submit</button>
+              </form>
+            </div>
             <div className="hover:cursor-pointer hover:scale-105 duration-300">
               <Link to='home' smooth duration={500}>
               <div className='group flex justify-center items-center flex-col'>

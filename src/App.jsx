@@ -7,7 +7,7 @@ import SocialLinks from './components/SocialLinks';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Skills from './components/Skills';
+import Skill from './components/Skill';
 function App() {
 
 
@@ -17,7 +17,7 @@ function App() {
     <Navbar/>
     <Home/>
     <About/>
-    <Skills/>
+    <Skill/>
     <Projects/>
     <Contact/>
     {/* <SocialLinks/> */}
