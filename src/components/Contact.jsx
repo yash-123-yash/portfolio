@@ -20,7 +20,7 @@ function Contact() {
 
         <div className="flex flex-col  justify-center items-center ">
             <div className="flex md:w-4/5 flex-col md:flex-row w-11/12">
-              <div className=" w-full md:w-min rounded-md  pb-6 flex flex-col mr-10 items-center justify-center">
+              <div className=" w-full md:w-min rounded-md  pb-6 flex flex-col mr-10 items-center justify-center md:text-xl text-sm">
                 <div className=" border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
                   <AiOutlineWhatsApp size={25}/>
                   <h1 className='mt-2 font-bold'>whatsApp</h1>
