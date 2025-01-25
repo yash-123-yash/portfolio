@@ -4,6 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-scroll';
 import { AiOutlineSun } from "react-icons/ai";
+import MoonIcon from '../icons/MoonIcon';
 
 function Navbar({changetheme,theme}) {
     
@@ -52,30 +53,33 @@ function Navbar({changetheme,theme}) {
              </li>
             ))
           }
+          <div className="">
+          <button className='' onClick={()=>changetheme(theme)}>{theme ==='light'?<MoonIcon/>:<AiOutlineSun size={25}/>}</button>
+         </div>
          </ul>
 
-         <div onClick={()=>setNav(!nav)} className="cursor-pointer px-2 z-10 text-gray-400 hover:text-white hover:scale-110 duration-200 md:hidden">
-
-          {nav ? <AiOutlineMenu  size={30}/> : <AiOutlineClose size={30}/>}
+         <div onClick={()=>setNav(!nav)} className="cursor-pointer px-2 z-10 text-gray-400 hover:text-white hover:scale-110 duration-200 md:hidden flex">
+         <button className='mr-4' onClick={()=>changetheme(theme)}>{theme ==='light'?<MoonIcon/>:<AiOutlineSun size={25}/>}</button>
+          {nav ? <AiOutlineMenu  size={30}/> : <AiOutlineClose  size={30}/>}
           
          </div>
-         <div className="">
-          <button className='' onClick={()=>changetheme(theme)}><AiOutlineSun size={25}/></button>
-         </div>
+         
 
          { !nav && (
-          <ul className='flex flex-col justify-center items-center bg-black absolute right-0 top-20 w-1/4 md:hidden'>
+          <ul className={`flex flex-col justify-center items-center ${ theme === 'light'?'bg-white ':'bg-black'} absolute right-0 top-20 w-1/4 md:hidden pb-3 rounded-sm`}>
           {/* <li className='text-red-500 py-2'>home</li> */}
           {
             links.map(({id,link})=>(
-             <li key={id} className='px-4 py-1.5 cursor-pointer capitalize text-gray-400 hover:text-white hover:scale-110 duration-200'>
+             <li key={id} className={`px-4 py-1.5 cursor-pointer capitalize ${ theme === 'light'?' text-gray-700':''} hover:text-white hover:scale-110 duration-200`}>
               <Link to={link} smooth duration={500}>{link}</Link>
               </li>
             ))
           }
           
          </ul>
+         
          )}
+         
 
          
     </div>

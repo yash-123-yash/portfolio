@@ -12,6 +12,7 @@ export default {
         'bg':'#F8F9FA',
         'fron':'#E9ECEF',
         'contact':'#6C757D'
+        
       }
     },
     fontFamily:{

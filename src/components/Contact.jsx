@@ -2,9 +2,11 @@ import React from 'react'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from 'react-scroll';
 import { AiOutlineMail } from "react-icons/ai";
-import { AiOutlineWhatsApp } from "react-icons/ai";
+//import { AiOutlineWhatsApp } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import TwitterIcon from '../icons/TwitterIcon';
 // import { FaInstagram } from "react-icons/fa";
-import { AiOutlineInstagram } from "react-icons/ai";
+//import { AiOutlineInstagram } from "react-icons/ai";
 
 function Contact({theme}) {
   return (
@@ -22,22 +24,28 @@ function Contact({theme}) {
             <div className="flex md:w-4/5 flex-col md:flex-row w-11/12 justify-center ">
               <div className=" w-full md:w-1/2  rounded-md  pb-6 flex flex-col mr-10 md:mr-6 items-center justify-center md:text-xl text-sm ">
                 <div className={` border-2 ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} rounded-md  flex flex-col justify-center items-center py-4 px-11 w-full  mb-6`}>
-                  <AiOutlineWhatsApp size={25}/>
-                  <h1 className='mt-2 font-bold'>whatsApp</h1>
-                  <h1 className=' '>+91 8432601748</h1>
+                <a href="https://www.linkedin.com/in/yash-bhalerao-67b987287/" target='_blank' className='flex justify-center items-center flex-col'>
+                  <AiFillLinkedin size={25}/>
+                  <h1 className='mt-2 font-bold'>LinkedIn</h1>
+                  <h1 className=' '>yashbhalerao</h1>
+                  </a>
                 </div>
+                
                 <div className={`border-2 rounded-md ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'}  flex flex-col justify-center items-center py-6 px-11 w-full  mb-6`}>
                   <AiOutlineMail size={25}/>
                   <h1 className='mt-2 font-bold'>email</h1>
                   <h1 className=' '>yashbhalerao@gmail.com</h1>
                 </div>
                 <div className={`border-2 rounded-md ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'}  flex flex-col justify-center items-center py-6 px-11 w-full  mb-6`}>
-                  <AiOutlineInstagram size={25}/>
-                  <h1 className='mt-2 font-bold'>Instagram</h1>
+                <a href="https://www.linkedin.com/in/yash-bhalerao-67b987287/" target='_blank' className='flex justify-center items-center flex-col'>
+                  <div className='bg-white rounded-md'><TwitterIcon size={25}/></div>
+                  <h1 className='mt-2 font-bold'>twitter</h1>
                   <h1 className=' '>Yash_Bhalerao</h1>
+                </a>
                 </div>
                 {/* <h1 className=''></h1> */}
               </div>
+              
               <form action="https://getform.io/f/aolljkdb"  method='POST' className='flex flex-col w-full md:w-2/3 h-full '>
                 <input type="text" name='name' placeholder='enter your name' 
                 className={`p-2 bg-transparent border-2 rounded-md ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} text-white focus:outline-none mb-6 py-3`}/>
