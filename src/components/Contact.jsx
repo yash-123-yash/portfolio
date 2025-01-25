@@ -8,7 +8,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 function Contact({theme}) {
   return (
-    <div name='contact' className={`w-full  h-full ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b to-black from-gray-800 text-white'} `}>
+    <div name='contact' className={`w-full  h-full ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} `}>
       <div className="  flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full ">
         <div className="pb-8 mt-16 ">
           <div className="mt-7 flex justify-center flex-col items-center">      

@@ -45,7 +45,7 @@ function Navbar({changetheme,theme}) {
           {/* <li className='px-4 cursor-pointer capitalize text-gray-400 hover:text-white hover:scale-110 duration-200'>Home</li> */}
           {
             links.map(({id,link})=>(
-             <li key={id} className={`px-4 cursor-pointer capitalize text-gray-400 ${theme==='light'?'hover:text-black ':'hover:text-white'}  hover:scale-110 duration-200`}>
+             <li key={id} className={`px-4 cursor-pointer capitalize text-gray-600 ${theme==='light'?'hover:text-black text-black':'hover:text-white'}  hover:scale-110 duration-200`}>
               
               
               <Link to={link}  smooth duration={500} >{link}</Link>

@@ -67,8 +67,8 @@ function Skills({theme}) {
                     {
                        others.map((item)=>(
                         <li className="flex list-none mb-4 md:ml-4 text-sm lg:text-1xl">
+                            <div className=''><AiFillCheckCircle className={` mr-2 mt-1 ${theme==='light'?' bg-fron':'border-white'} `}/></div>{item.Skill}
                             
-                            <AiFillCheckCircle className='mr-2 mt-1'/>{item.Skill}
                             
                         </li>
                        )) 
