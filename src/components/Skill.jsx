@@ -10,7 +10,7 @@ function Skills() {
 
   return (
     <div name="skills" className='w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white md:px-7 px-6 pt-40 md:pt-0'>
-      <div className="flex flex-col justify-center items-center max-w-screen-lg mx-auto h-full ">
+      <div className="flex flex-col justify-center items-center max-w-screen-lg mx-auto h-full mt-10 md:mt-0 ">
         <div className="pb-8 ">
           <div className=" flex justify-center flex-col items-center">      
             <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Skills</p>
@@ -25,7 +25,7 @@ function Skills() {
             <label htmlFor='others' className='hover:scale-105 duration-300 cursor-pointer mr-5 border-2 border-white py-2 px-4 text-xs md:text-1xl rounded-full'>others</label>
         </div>
 
-        <div className="flex md:w-3/4  flex-col items-center justify-center mt-6 md:flex-row ">
+        <div className="flex md:w-11/12  flex-col items-center justify-center mt-6 md:flex-row ">
             {
                 value==='web'?(
                 <>

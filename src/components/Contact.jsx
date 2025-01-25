@@ -19,19 +19,19 @@ function Contact() {
         </div>
 
         <div className="flex flex-col  justify-center items-center ">
-            <div className="flex md:w-4/5 flex-col md:flex-row w-11/12">
-              <div className=" w-full md:w-min rounded-md  pb-6 flex flex-col mr-10 items-center justify-center md:text-xl text-sm">
-                <div className=" border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
+            <div className="flex md:w-4/5 flex-col md:flex-row w-11/12 ">
+              <div className=" w-full md:w-1/2  rounded-md  pb-6 flex flex-col mr-10 md:mr-5 items-center justify-center md:text-xl text-sm ">
+                <div className=" border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full  mb-6">
                   <AiOutlineWhatsApp size={25}/>
                   <h1 className='mt-2 font-bold'>whatsApp</h1>
                   <h1 className=' '>+91 8432601748</h1>
                 </div>
-                <div className="border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
+                <div className="border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full  mb-6">
                   <AiOutlineMail size={25}/>
                   <h1 className='mt-2 font-bold'>email</h1>
                   <h1 className=' '>yashbhalerao@gmail.com</h1>
                 </div>
-                <div className="border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full mb-6">
+                <div className="border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full  mb-6">
                   <AiOutlineInstagram size={25}/>
                   <h1 className='mt-2 font-bold'>Instagram</h1>
                   <h1 className=' '>Yash_Bhalerao</h1>

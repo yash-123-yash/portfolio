@@ -2,17 +2,18 @@ import React from 'react'
 // import darkLight from "../assets/darkLight.png"
 import { projects } from '../Data/projectsData'
 import { AiOutlineArrowRight } from "react-icons/ai";
+// bg-gradient-to-b to-black from-gray-800
 
 function Projects() {
 
 
 
   return (
-    <div name="project" className='bg-gradient-to-b to-black from-gray-800 w-full text-white md:h-screen'>
+    <div name="project" className=' bg-gradient-to-b to-black from-gray-800 w-full text-white md:h-screen'>
       <div className="max-w-screen-lg p-2 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 mt-16 md:mt-14 flex justify-center flex-col items-center">
             <p className='text-4xl font-bold inline border-b-4 border-gray-500 mt-4'>Projects</p>
-            <p className='py-6'>check my projects</p>
+            <p className='py-6 md:pt-3 md:pb-0'>check my projects</p>
         </div>
 
 
