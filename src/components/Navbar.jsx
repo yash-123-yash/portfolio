@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-scroll';
+import { AiOutlineSun } from "react-icons/ai";
 
-function Navbar() {
+function Navbar({changetheme,theme}) {
     
   const [nav,setNav]=useState(true)
 
@@ -33,7 +34,7 @@ function Navbar() {
 
   return (
     <>
-    <div  className="z-10 flex justify-between items-center w-full h-20 bg-black text-white fixed px-4">
+    <div  className={`z-10 flex justify-between items-center w-full h-20  ${theme==='light'?'text-black bg-nav':'text-white bg-black'}  fixed px-4`}>
          <div className="">
           <h1 className='text-2xl md:text-3xl font-signature inline border-b-2 border-blue-200'>Yash Bhalerao</h1>
          </div>
@@ -44,7 +45,7 @@ function Navbar() {
           {/* <li className='px-4 cursor-pointer capitalize text-gray-400 hover:text-white hover:scale-110 duration-200'>Home</li> */}
           {
             links.map(({id,link})=>(
-             <li key={id} className=' px-4 cursor-pointer capitalize text-gray-400 hover:text-white hover:scale-110 duration-200'>
+             <li key={id} className={`px-4 cursor-pointer capitalize text-gray-400 ${theme==='light'?'hover:text-black ':'hover:text-white'}  hover:scale-110 duration-200`}>
               
               
               <Link to={link}  smooth duration={500} >{link}</Link>
@@ -57,6 +58,9 @@ function Navbar() {
 
           {nav ? <AiOutlineMenu  size={30}/> : <AiOutlineClose size={30}/>}
           
+         </div>
+         <div className="">
+          <button className='' onClick={()=>changetheme(theme)}><AiOutlineSun size={25}/></button>
          </div>
 
          { !nav && (

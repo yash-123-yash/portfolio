@@ -1,9 +1,9 @@
 import React from 'react'
 import profile2 from '../assets/profile2.jpeg'
 
-function About() {
+function About({theme}) {
   return (
-    <div name="about" className='w-full h-screen  text-white bg-gradient-to-b to-black from-gray-800 md:px-20  pt-14'>
+    <div name="about" className={`w-full h-screen ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b to-black from-gray-800 text-white'} md:px-20  pt-14`}>
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w- h-full ">
             
 

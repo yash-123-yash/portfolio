@@ -3,13 +3,13 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import { Frontend ,Backend,others} from '../Data/Skills.jsx'
 
 
-function Skills() {
+function Skills({theme}) {
 
     const [value,setValue]=useState('web')
-    console.log(value)
+    // console.log(value)
 
   return (
-    <div name="skills" className='w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white md:px-7 px-6 pt-40 md:pt-0'>
+    <div name="skills" className={`w-full h-screen bg-gradient-to-b ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} md:px-7 px-6 pt-40 md:pt-0`}>
       <div className="flex flex-col justify-center items-center max-w-screen-lg mx-auto h-full mt-10 md:mt-0 ">
         <div className="pb-8 ">
           <div className=" flex justify-center flex-col items-center">      
@@ -20,16 +20,16 @@ function Skills() {
 
         <div className="flex mb-4 ">
             <input type='radio' name='radio' id='web' className='hidden ' value='web' onChange={(e)=>setValue(e.target.value)} />
-            <label htmlFor='web' className='hover:scale-105 duration-300 cursor-pointer mr-5 border-2 border-white py-2 px-4  md:text-1xl rounded-full text-xs'>web development</label>
+            <label htmlFor='web' className={`hover:scale-105 duration-300 cursor-pointer mr-5 border-2 ${theme==='light'?'border-black':'border-white'} py-2 px-4  md:text-1xl rounded-full text-xs`}>web development</label>
             <input type='radio' name='radio' id='others' className='hidden ' value='other'onChange={(e)=>setValue(e.target.value)}/>
-            <label htmlFor='others' className='hover:scale-105 duration-300 cursor-pointer mr-5 border-2 border-white py-2 px-4 text-xs md:text-1xl rounded-full'>others</label>
+            <label htmlFor='others' className={`hover:scale-105 duration-300 cursor-pointer mr-5 border-2 ${theme==='light'?'border-black':'border-white'} py-2 px-4 text-xs md:text-1xl rounded-full`}>others</label>
         </div>
 
         <div className="flex md:w-11/12  flex-col items-center justify-center mt-6 md:flex-row ">
             {
                 value==='web'?(
                 <>
-                <div className="md:mr-8 mb-8 w-full lg:w-11/12 h-full text-center border-2 border-white rounded-lg p-4 ">
+                <div className={`md:mr-8 mb-8 w-full lg:w-11/12 h-full text-center border-2 ${theme==='light'?'border-black bg-fron':'border-white'} rounded-lg p-4 `}>
                  <h1 className='font-bold text-2xl mb-8'>Frontend</h1>
                   <div className="grid grid-cols-2 gap-4">
                     {
@@ -44,7 +44,7 @@ function Skills() {
                   </div>
                 </div>
 
-                <div className="md:mr-8 mb-8 w-full lg:w-11/12 h-full text-center border-2 border-white rounded-lg p-4 ">
+                <div className={`md:mr-8 mb-8 w-full lg:w-11/12 h-full text-center border-2 ${theme==='light'?'border-black bg-fron':'border-white'} rounded-lg p-4 `}>
                   <h1 className='font-bold text-2xl mb-8'>Backend</h1>
                   <div className="grid grid-cols-2 gap-4">
                     {
@@ -61,7 +61,7 @@ function Skills() {
                 </>
             ):
             (
-             <div className="h-full md:w-1/2 lg:w-5/12 md:mr-8 mb-8 text-center border-2 border-white rounded-lg p-4 ">
+             <div className={`h-full md:w-1/2 lg:w-5/12 md:mr-8 mb-8 text-center border-2 ${theme==='light'?'border-black bg-fron':'border-white'} rounded-lg p-4 `}>
                 <h1 className='font-bold text-2xl mb-8'>others</h1>
                 <div className="grid grid-cols-2 gap-4">
                     {

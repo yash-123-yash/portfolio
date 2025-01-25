@@ -12,16 +12,17 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 
-function Home() {
+function Home({theme}) {
 
   
 
   return (
-    <div name="home" className=' h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white md:px-6 pt-10 md:pt-0'>
+    <div name="home" className={` h-screen w-full  md:px-6 pt-10 md:pt-0   ${theme==='light'? 'bg-bg':'bg-gradient-to-b from-black to-gray-800 text-white'}`}>
       <div className=" max-w-screen-lg lg:max mx-auto flex flex-col lg:flex-row items-center justify-center md:justify-around h-full px-4 pt-6">
         <div className="mt-24 md:mt-20 flex flex-col justify-center h-4/5  ">
           <h1 className='md:text-2xl'>I'm,</h1>
-            <TypeAnimation sequence={["Yash Bhalerao,",10000]} wrapper="span" speed={5} className='text-4xl py-1 sm:text-7xl  font-bold text-white'/>
+       
+            <div className={`text-4xl py-1 sm:text-7xl  font-bold ${theme==='light'?'text-gray-700':'text-white'}`}><TypeAnimation sequence={["Yash Bhalerao,",10000]} wrapper="span" speed={5} /></div>
             {/* <h2 className='text-4xl py-1 sm:text-7xl font-bold text-white'>
                 Yash Bhalerao,
             </h2> */}
@@ -36,7 +37,7 @@ function Home() {
                     
                 </button>
                 </Link>
-                <div className= "flex">
+                <div className= {`flex ${theme==='light'?'text-black':'text-white'}`}>
                   <div className="text-white flex hover:-translate-y-0.5  hover:text-blue-500 hover:scale-110 duration-150 py-2 mr-2 ml-0.5">
                     <a href="https://www.linkedin.com/in/yash-bhalerao-67b987287/" target='_blank'><AiFillLinkedin size={23}/></a>
                   </div>
