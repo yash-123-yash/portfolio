@@ -8,8 +8,7 @@ function Navbar() {
     
   const [nav,setNav]=useState(true)
 
-  const links=[
-    {
+  const links=[{
       id:1,
       link:"home"
     },
