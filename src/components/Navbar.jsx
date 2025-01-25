@@ -48,7 +48,7 @@ function Navbar() {
              <li key={id} className=' px-4 cursor-pointer capitalize text-gray-400 hover:text-white hover:scale-110 duration-200'>
               
               
-              <Link to={link} containerId='scroll-container' smooth duration={500} >{link}</Link>
+              <Link to={link}  smooth duration={500} >{link}</Link>
              </li>
             ))
           }
