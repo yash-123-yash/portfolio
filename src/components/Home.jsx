@@ -17,9 +17,9 @@ function Home() {
   
 
   return (
-    <div name="home" className=' h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white md:px-6 '>
-      <div className=" max-w-screen-lg mx-auto flex flex-col lg:flex-row items-center justify-center md:justify-around h-full px-4 ">
-        <div className="mt-24 md:mt-20 flex flex-col justify-center h-4/5">
+    <div name="home" className=' h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white md:px-6 pt-10 md:pt-0'>
+      <div className=" max-w-screen-lg lg:max mx-auto flex flex-col lg:flex-row items-center justify-center md:justify-around h-full px-4 pt-6">
+        <div className="mt-24 md:mt-20 flex flex-col justify-center h-4/5  ">
           <h1 className='md:text-2xl'>I'm,</h1>
             <TypeAnimation sequence={["Yash Bhalerao,",10000]} wrapper="span" speed={5} className='text-4xl py-1 sm:text-7xl  font-bold text-white'/>
             {/* <h2 className='text-4xl py-1 sm:text-7xl font-bold text-white'>
@@ -52,7 +52,7 @@ function Home() {
             </div>
         </div>
 
-        <div className=" md:hover:scale-105 duration-300 rounded-3xl md:w-1/4 md:h-2/3 mt-6 md:mt-0 lg:mt-6 lg:w-2/6">
+        <div className=" md:hover:scale-105 duration-300 rounded-3xl md:w-1/4 md:h-2/3 mt-6 md:mt-0 lg:mt-6 lg:w-2/6 ">
         <div className="md:overflow-hidden flex flex-col rounded-3xl ">
             <img src={heroImage} alt="my profile" 
             className='md:hover:brightness-105 brightness-95 md:hover:scale-105 duration-300 rounded-3xl mx-auto  mt-2 md:mt-0 w-1/2 md:w-full md:h-full object-cover ' />
