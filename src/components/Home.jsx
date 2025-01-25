@@ -21,7 +21,7 @@ function Home() {
       <div className=" max-w-screen-lg mx-auto flex flex-col lg:flex-row items-center justify-center md:justify-around h-full px-4 ">
         <div className="mt-24 md:mt-20 flex flex-col justify-center h-4/5">
           <h1 className='md:text-2xl'>I'm,</h1>
-            <TypeAnimation sequence={["Yash Bhalerao,",10000]} wrapper="span" speed={5} className=' py-1   font-bold text-white'/>
+            <TypeAnimation sequence={["Yash Bhalerao,",10000]} wrapper="span" speed={5} className='text-4xl py-1 sm:text-7xl  font-bold text-white'/>
             {/* <h2 className='text-4xl py-1 sm:text-7xl font-bold text-white'>
                 Yash Bhalerao,
             </h2> */}
