@@ -1,8 +1,44 @@
 import React from 'react'
-// import darkLight from "../assets/darkLight.png"
-import { projects } from '../data/projectsData'
 import { AiOutlineArrowRight } from "react-icons/ai";
-// bg-gradient-to-b to-black from-gray-800
+
+import portfolio from '../assets/portfolio.png'
+import cart from '../assets/shoppingCart.png'
+import darkLight from '../assets/darkLight.png'
+import Todo from '../assets/Todo.png'
+import movie from '../assets/movie.png'
+
+const projects=[
+    {
+        id:1,
+        title:'Portfolio',
+        src:portfolio,
+        link:'https://github.com/yash-123-yash/portfolio'
+    },
+    {
+        id:2,
+        title:'Shopping Cart',
+        src:cart,
+        link:'https://github.com/yash-123-yash/shoppingCart'
+    },
+    {
+        id:3,
+        title:'Todo',
+        src:Todo,
+        link:'https://github.com/yash-123-yash/todo'
+    },
+    {
+        id:4,
+        title:'Dark Light mode',
+        src:darkLight,
+        link:'https://github.com/yash-123-yash/LightDarrkMode'
+    },
+    {
+        id:5,
+        title:'Movie App',
+        src:movie,
+        link:'https://github.com/yash-123-yash/movie-app'
+    },
+]
 
 function Projects({theme}) {
 
@@ -15,13 +51,6 @@ function Projects({theme}) {
             <p className='text-4xl font-bold inline border-b-4 border-gray-500 mt-12 '>Projects</p>
             <p className='py-6 md:pt-3 md:pb-0'>check my projects</p>
         </div>
-
-
-        
-
-
-
- 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 sm:px-8 ">
         {
             projects.map(({id,src,link,title})=>(
