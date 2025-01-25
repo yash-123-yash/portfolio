@@ -52,7 +52,7 @@ function Home() {
             </div>
         </div>
 
-        <div className=" md:hover:scale-105 duration-300 rounded-3xl md:w-1/4 md:h-2/3 mt-6 md:mt-0 ">
+        <div className=" md:hover:scale-105 duration-300 rounded-3xl md:w-1/4 md:h-2/3 mt-6 md:mt-0 lg:mt-6 lg:w-2/6">
         <div className="md:overflow-hidden flex flex-col rounded-3xl ">
             <img src={heroImage} alt="my profile" 
             className='md:hover:brightness-105 brightness-95 md:hover:scale-105 duration-300 rounded-3xl mx-auto  mt-2 md:mt-0 w-1/2 md:w-full md:h-full object-cover ' />

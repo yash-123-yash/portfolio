@@ -29,12 +29,12 @@ function Skills() {
             {
                 value==='web'?(
                 <>
-                <div className="md:mr-8 mb-8 w-full h-full text-center border-2 border-white rounded-lg p-4 ">
+                <div className="md:mr-8 mb-8 w-full lg:w-11/12 h-full text-center border-2 border-white rounded-lg p-4 ">
                  <h1 className='font-bold text-2xl mb-8'>Frontend</h1>
                   <div className="grid grid-cols-2 gap-4">
                     {
                        Frontend.map((item)=>(
-                        <li className="flex list-none mb-4 ml-4 text-sm">
+                        <li className="flex list-none mb-4 ml-4 text-sm lg:text-1xl  ">
                             
                             <AiFillCheckCircle className='mr-2 mt-1'/>{item.Skill}
                             
@@ -44,12 +44,12 @@ function Skills() {
                   </div>
                 </div>
 
-                <div className="md:mr-8 mb-8 w-full h-full text-center border-2 border-white rounded-lg p-4 ">
+                <div className="md:mr-8 mb-8 w-full lg:w-11/12 h-full text-center border-2 border-white rounded-lg p-4 ">
                   <h1 className='font-bold text-2xl mb-8'>Backend</h1>
                   <div className="grid grid-cols-2 gap-4">
                     {
                        Backend.map((item)=>(
-                        <li className="flex list-none mb-4 ml-4 text-sm">
+                        <li className="flex list-none mb-4 ml-4 text-sm lg:text-1xl">
                             
                             <AiFillCheckCircle className='mr-2 mt-1'/>{item.Skill}
                             
@@ -61,12 +61,12 @@ function Skills() {
                 </>
             ):
             (
-             <div className="h-full md:w-1/2 md:mr-8 mb-8 text-center border-2 border-white rounded-lg p-4 ">
+             <div className="h-full md:w-1/2 lg:w-5/12 md:mr-8 mb-8 text-center border-2 border-white rounded-lg p-4 ">
                 <h1 className='font-bold text-2xl mb-8'>others</h1>
                 <div className="grid grid-cols-2 gap-4">
                     {
                        others.map((item)=>(
-                        <li className="flex list-none mb-4 md:ml-4 text-sm">
+                        <li className="flex list-none mb-4 md:ml-4 text-sm lg:text-1xl">
                             
                             <AiFillCheckCircle className='mr-2 mt-1'/>{item.Skill}
                             

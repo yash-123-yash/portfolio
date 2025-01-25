@@ -19,9 +19,9 @@ function Contact() {
         </div>
 
         <div className="flex flex-col  justify-center items-center ">
-            <div className="flex md:w-4/5 flex-col md:flex-row w-11/12 ">
-              <div className=" w-full md:w-1/2  rounded-md  pb-6 flex flex-col mr-10 md:mr-5 items-center justify-center md:text-xl text-sm ">
-                <div className=" border-2 rounded-md border-white flex flex-col justify-center items-center py-6 px-11 w-full  mb-6">
+            <div className="flex md:w-4/5 flex-col md:flex-row w-11/12 justify-center ">
+              <div className=" w-full md:w-1/2  rounded-md  pb-6 flex flex-col mr-10 md:mr-6 items-center justify-center md:text-xl text-sm ">
+                <div className=" border-2 rounded-md border-white flex flex-col justify-center items-center py-4 px-11 w-full  mb-6">
                   <AiOutlineWhatsApp size={25}/>
                   <h1 className='mt-2 font-bold'>whatsApp</h1>
                   <h1 className=' '>+91 8432601748</h1>
@@ -38,15 +38,15 @@ function Contact() {
                 </div>
                 {/* <h1 className=''></h1> */}
               </div>
-              <form action="https://getform.io/f/aolljkdb"  method='POST' className='flex flex-col w-full md:w-2/3'>
+              <form action="https://getform.io/f/aolljkdb"  method='POST' className='flex flex-col w-full md:w-2/3 h-full '>
                 <input type="text" name='name' placeholder='enter your name' 
-                className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-6'/>
+                className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-6 py-3'/>
 
                 <input type="text" name='email' placeholder='enter your name' 
-                className=' p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-6'/>
+                className=' p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-6 py-3'/>
 
                 <textarea name="message" placeholder='Enter yoour message' rows="8" id=""
-                className='p-2 bg-transparent border-2 rounded-md focus:outline-none mb-6'></textarea>
+                className='p-2 bg-transparent border-2 rounded-md focus:outline-none mb-6 py-3'></textarea>
 
                 <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3  mx-auto flex items-center rounded-md hover:scale-105 duration-300'>Submit</button>
               </form>
