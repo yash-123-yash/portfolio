@@ -20,9 +20,9 @@ function Skills({theme}) {
 
         <div className="flex mb-4 ">
             <input type='radio' name='radio' id='web' className='hidden ' value='web' onChange={(e)=>setValue(e.target.value)} />
-            <label htmlFor='web' className={`hover:scale-105 duration-300 cursor-pointer mr-5 border-2 ${theme==='light'?'border-black':'border-white'} py-2 px-4  md:text-1xl rounded-full text-xs`}>web development</label>
+            <label htmlFor='web' className={`hover:scale-105  duration-300 cursor-pointer mr-5 border-2 ${theme==='light'?'border-black text-black':'border-white text-white '} py-2 px-4  md:text-1xl rounded-full text-xs ${value==='web'?'bg-blue-400 duration-200 ':''}`}>web development</label>
             <input type='radio' name='radio' id='others' className='hidden ' value='other'onChange={(e)=>setValue(e.target.value)}/>
-            <label htmlFor='others' className={`hover:scale-105 duration-300 cursor-pointer mr-5 border-2 ${theme==='light'?'border-black':'border-white'} py-2 px-4 text-xs md:text-1xl rounded-full`}>others</label>
+            <label htmlFor='others' className={`hover:scale-105  duration-300 cursor-pointer mr-5 border-2 ${theme==='light'?'border-black text-black':'border-white text-white'} py-2 px-3 text-xs md:tex text-blackt-1xl rounded-full ${value==='other'?'bg-blue-400 duration-200':''}`}>others</label>
         </div>
 
         <div className="flex md:w-11/12  flex-col items-center justify-center mt-6 md:flex-row ">

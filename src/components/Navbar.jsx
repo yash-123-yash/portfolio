@@ -58,7 +58,7 @@ function Navbar({changetheme,theme}) {
          </div>
          </ul>
 
-         <div onClick={()=>setNav(!nav)} className="cursor-pointer px-2 z-10 text-gray-400 hover:text-white hover:scale-110 duration-200 md:hidden flex">
+         <div onClick={()=>setNav(!nav)} className="cursor-pointer px-2 z-10 text-gray-400 hover:text-gray-500  duration-200 md:hidden flex">
          <button className='mr-4' onClick={()=>changetheme(theme)}>{theme ==='light'?<MoonIcon/>:<AiOutlineSun size={25}/>}</button>
           {nav ? <AiOutlineMenu  size={30}/> : <AiOutlineClose  size={30}/>}
           
@@ -70,7 +70,7 @@ function Navbar({changetheme,theme}) {
           {/* <li className='text-red-500 py-2'>home</li> */}
           {
             links.map(({id,link})=>(
-             <li key={id} className={`px-4 py-1.5 cursor-pointer capitalize ${ theme === 'light'?' text-gray-700':''} hover:text-white hover:scale-110 duration-200`}>
+             <li key={id} className={`px-4 py-1.5 cursor-pointer capitalize ${ theme === 'light'?' text-gray-700 hover:text-gray-700':'hover:text-white'}  hover:scale-110 duration-200`}>
               <Link to={link} smooth duration={500}>{link}</Link>
               </li>
             ))

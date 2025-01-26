@@ -60,7 +60,7 @@ function Projects({theme}) {
             
                     <img src={src} alt="" className='rounded-md ' />
                     {/* <a href={`${link}`} target='_blank'> */}
-                      <p className='py-2 px-1  text-white'>{title}:-</p>
+                      <p className={`py-2 px-1  ${theme==='light'?'text-black':'text-white'}`}>{title}:-</p>
                     
                       <div className="flex items-center justify-center ">
                         <button className=' mr-2 border-2 border-l-1 border-r-1 w-full rounded-lg py-1 px-3 text-sm md:text-1xl'><a href={`${link}`} target='_blank'>code</a></button>
