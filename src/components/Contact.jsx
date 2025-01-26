@@ -7,20 +7,48 @@ import { AiFillLinkedin } from "react-icons/ai";
 import TwitterIcon from '../icons/TwitterIcon';
 // import { FaInstagram } from "react-icons/fa";
 //import { AiOutlineInstagram } from "react-icons/ai";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../Variants';
 
 function Contact({theme}) {
   return (
     <div name='contact' className={`w-full  h-full ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} `}>
       <div className="  flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full ">
-        <div className="pb-8 mt-16 ">
+        <motion.div 
+            variants={fadeIn('up',0.9)}
+            initial={{display:'hidden',opacity:0,scale:0.97}}
+            whileInView={{
+              display:'show',
+              opacity:1,
+              scale:1,
+              transition:{duration:1.2}  
+            }}
+
+            viewport={{
+             once:true ,
+              opacity:0}} 
+            className="pb-8 mt-16 ">
           <div className="mt-7 flex justify-center flex-col items-center">      
-          <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact&nbsp;&nbsp;Me</p>
-          <p className='py-4'>get in touch with me</p>
+            <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact&nbsp;&nbsp;Me</p>
+            <p className='py-4'>get in touch with me</p>
           </div>
             
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col  justify-center items-center ">
+        <motion.div 
+                      // variants={fadeIn('down',0.9)}
+           initial={{display:'hidden',opacity:0,scale:0.975}}
+           whileInView={{
+                        display:'show',
+                        opacity:1,
+                        scale:1,
+                        transition:{duration:1}  
+                      }}
+          
+            viewport={{
+                      //  once:true ,
+            opacity:0}} 
+            className="flex flex-col  justify-center items-center ">
             <div className="flex md:w-4/5 flex-col md:flex-row w-11/12 justify-center ">
               <div className=" w-full md:w-1/2  rounded-md  pb-6 flex flex-col mr-10 md:mr-6 items-center justify-center md:text-xl text-sm ">
                 <div className={` border-2 ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} rounded-md  flex flex-col justify-center items-center py-4 px-11 w-full  mb-6`}>
@@ -53,7 +81,7 @@ function Contact({theme}) {
                 <input type="text" name='email' placeholder='enter your name' 
                 className={` p-2 bg-transparent border-2 rounded-md ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} text-white focus:outline-none mb-6 py-3`}/>
 
-                <textarea name="message" placeholder='Enter yoour message' rows="8" id=""
+                <textarea name="message" placeholder='enter your message' rows="8" id=""
                 className={`p-2 bg-transparent border-2 ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} rounded-md focus:outline-none mb-6 py-3`}></textarea>
 
                 <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3  mx-auto flex items-center rounded-md hover:scale-105 duration-300'>Submit</button>
@@ -68,7 +96,7 @@ function Contact({theme}) {
               
             </div>
             
-        </div>
+        </motion.div>
         
       </div>
       

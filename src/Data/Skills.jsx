@@ -4,21 +4,21 @@ export const Frontend=[{
     Skill:'HTML'
 },
 {
-    id:1,
+    id:2,
     Skill:'CSS'
 },
 {
-    id:1,
+    id:3,
     Skill:'Javascript'
 }
 ,
 {
-    id:1,
+    id:3,
     Skill:'react.js'
 }
 ,
 {
-    id:1,
+    id:4,
     Skill:'tailwind css'
 }]
 
@@ -27,30 +27,34 @@ export const Backend=[{
     Skill:'php'
 },
 {
-    id:1,
+    id:2,
     Skill:'mysql'
 },
 {
-    id:1,
+    id:3,
     Skill:'Node.js'
 }
 ,
 {
-    id:1,
+    id:4,
     Skill:'mongodb'
 }
 ]
 
 export const others=[{
     id:1,
+    Skill:'figma'
+},
+{
+    id:2,
     Skill:'after effects'
 },
 {
-    id:1,
+    id:3,
     Skill:'blender'
 },
 {
-    id:1,
+    id:3,
     Skill:'photoshop'
 }
 // ,

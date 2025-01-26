@@ -6,6 +6,8 @@ import cart from '../assets/shoppingCart.png'
 import darkLight from '../assets/darkLight.png'
 import Todo from '../assets/Todo.png'
 import movie from '../assets/movie.png'
+import { fadeIn } from '../Variants';
+import { motion } from 'framer-motion';
 
 const projects=[
     {
@@ -47,14 +49,40 @@ function Projects({theme}) {
   return (
     <div name="project" className={`${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b to-black from-gray-800 text-white'} w-full md:h-screen pt-8  `}>
       <div className="max-w-screen-lg p-2 mx-auto flex flex-col justify-center w-full h-full ">
-        <div className="pb-8 mt-16 md:mt-14 flex justify-center flex-col items-center">
+      <motion.div 
+               variants={fadeIn('down',0.9)}
+               initial={{display:'hidden',opacity:0}}
+               whileInView={{
+                        display:'show',
+                        opacity:1,
+                        scale:1,
+                        transition:{duration:1.2}  
+                      }}
+              viewport={{
+                       once:true ,
+                        opacity:0}}
+             className="pb-8 mt-16 md:mt-14 flex justify-center flex-col items-center">
             <p className='text-4xl font-bold inline border-b-4 border-gray-500 mt-12 '>Projects</p>
             <p className='py-6 md:pt-3 md:pb-0'>check my projects</p>
-        </div>
+      </motion.div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 sm:px-8 ">
         {
             projects.map(({id,src,link,title})=>(
-                <div className="duration-200 hover:scale-105 mb-2 scale-105">
+                <motion.div
+                // variants={fadeIn('up',0.9)}
+                initial={{display:'hidden',opacity:0 ,scale:0.95}}
+                whileInView={{
+              display:'show',
+              opacity:1,
+              scale:1,
+              transition:{duration:1.5}  
+                }}
+
+            viewport={{
+            //  once:true ,
+              opacity:0}}
+            className="duration-200 hover:scale-105 mb-2 scale-105">
                   {/* <p className='pb-3 text-blue-300'>{title}:-</p> */}
                   <div key={id} className="shadow-md shadow-gray-600 rounded-lg p-4">
             
@@ -68,15 +96,15 @@ function Projects({theme}) {
                       </div>
                     
                   </div>
-                </div>
+                </motion.div>
             ))
         }
-        <div className=" flex justify-center items-center hover:scale-105 duration-200">
+        <motion.div className=" flex justify-center items-center hover:scale-105 duration-200">
           <div className="flex flex-col justify-center items-center">
             <AiOutlineArrowRight className='-rotate-90 my-2' />
           <a href="https://github.com/yash-123-yash?tab=repositories" target='_blank'>For more Projects</a> 
           </div>
-        </div>
+        </motion.div>
         
         </div>
       </div>
