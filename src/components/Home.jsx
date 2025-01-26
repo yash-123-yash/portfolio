@@ -17,7 +17,7 @@ function Home({theme}) {
   
 
   return (
-    <div name="home" className={` h-screen w-full  md:px-6 pt-10 md:pt-0   ${theme==='light'? 'bg-bg':'bg-gradient-to-b from-black to-gray-800 text-white'}`}>
+    <div name="home" className={` h-screen w-full  md:px-6 pt-5 md:pt-0   ${theme==='light'? 'bg-bg':'bg-gradient-to-b from-black to-gray-800 text-white'}`}>
       <div className=" max-w-screen-lg lg:max mx-auto flex flex-col lg:flex-row items-center justify-center md:justify-around h-full px-4 pt-6">
         <div className="mt-24 md:mt-20 flex flex-col justify-center h-4/5  ">
           <h1 className='md:text-2xl'>I'm,</h1>

@@ -4,7 +4,7 @@ import profile2 from '../assets/profile2.jpeg'
 function About({theme}) {
   return (
     <div name="about" className={`w-full h-screen ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b to-black from-gray-800 text-white'} md:px-20  pt-14`}>
-        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w- h-full ">
+        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w- h-full pt-14 md:p-0 lg:pt-0">
             
 
             <div className="flex md:mt-20 flex-col-reverse lg:flex-row justify-center items-center md:scale-125 " >
@@ -20,7 +20,7 @@ function About({theme}) {
                      <p className='text-4xl font-bold   inline border-b-4 border-gray-500  '>About&nbsp;&nbsp;Me</p>
                      
                  </div>
-                <p className=' font-signature2 md:text-sm lg:text-1xl tracking-widest'>
+                <p className=' font-signature2 md:text-sm lg:text-1xl text-sm tracking-widest'>
                 I’m a frontend developer and a student at JSPM imperial College,Pune. I love creating websites that look great and work smoothly. Using tools like HTML, CSS, JavaScript, and frameworks like React, I focus on building fast, responsive, and user-friendly designs. I’m passionate about solving problems, learning new technologies, and improving my skills to deliver the best results.
             </p>
                 </div>
