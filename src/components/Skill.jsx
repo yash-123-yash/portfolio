@@ -9,7 +9,7 @@ function Skills({theme}) {
     // console.log(value)
 
   return (
-    <div name="skills" className={`w-full h-screen bg-gradient-to-b ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} md:px-7 px-6 pt-40 md:pt-0`}>
+    <div name="skills" className={`w-full h-screen bg-gradient-to-b ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} md:px-7 px-6 pt-40 md:pt-1`}>
       <div className="flex flex-col justify-center items-center max-w-screen-lg mx-auto h-full mt-10 md:mt-0 ">
         <div className="pb-8 ">
           <div className=" flex justify-center flex-col items-center">      
