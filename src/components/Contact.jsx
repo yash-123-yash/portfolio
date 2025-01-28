@@ -12,8 +12,8 @@ import { fadeIn } from '../Variants';
 
 function Contact({theme}) {
   return (
-    <div name='contact' className={`w-full  h-full ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} `}>
-      <div className="  flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full ">
+    <div name='contact' className={`w-full  h-full ${theme==='light'? 'bg-bg text-black':'bg-gradient-to-b from-black to-gray-800 text-white'} md:pt-28 lg:pt-10`}>
+      <div className="  flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full   ">
         <motion.div 
             variants={fadeIn('up',0.9)}
             initial={{display:'hidden',opacity:0,scale:0.97}}
@@ -78,7 +78,7 @@ function Contact({theme}) {
                 <input type="text" name='name' placeholder='enter your name' 
                 className={`p-2 bg-transparent border-2 rounded-md ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} text-white focus:outline-none mb-6 py-3`}/>
 
-                <input type="text" name='email' placeholder='enter your name' 
+                <input type="text" name='email' placeholder='enter your email' 
                 className={` p-2 bg-transparent border-2 rounded-md ${theme==='light'?'bg-bg border-2 border-black':'bg-transparent border-white'} text-white focus:outline-none mb-6 py-3`}/>
 
                 <textarea name="message" placeholder='enter your message' rows="8" id=""
