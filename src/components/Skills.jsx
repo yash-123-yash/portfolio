@@ -62,18 +62,7 @@ function Skills() {
           }   
         </div> */}
 
-        <div className="grid grid-cols-2 ">
-          {
-            skills.map((skill,id)=>(
-              <>
-              <div className=" p-2 md:text-2xl  m-5 border-b-2 border-l-2 border-r-2 rounded-md hover:bg-gradient-to-b from-transparent from-25% to-blue-500 duration-200 hover:scale-105">{skill.skill}</div>
-              </>
-          ))
-          }
-          
-          {/* <div className="bg-red-300 m-3">html</div>
-          <div className="bg-red-300 m-3">html</div> */}
-        </div>
+        
 
       </div>
     </div>
